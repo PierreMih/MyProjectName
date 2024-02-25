@@ -1,0 +1,37 @@
+name: myprojectname
+services:
+- name: myprojectname-administration-httpapi-host
+  project: services/administration/host/MyProjectName.Administration.HttpApi.Host/MyProjectName.Administration.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 7001
+- name: myprojectname-identityservice-httpapi-host
+  project: services/identity/host/MyProjectName.IdentityService.HttpApi.Host/MyProjectName.IdentityService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 7002
+- name: myprojectname-saas-httpapi-host
+  project: services/saas/host/MyProjectName.SaaS.HttpApi.Host/MyProjectName.SaaS.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 7003
+- name: myprojectname-auth-server
+  project: apps/MyProjectName.AuthServer/MyProjectName.AuthServer.csproj
+  bindings:
+    - protocol: https
+      port: 7600
+- name: myprojectname-gateway
+  project: gateway/MyProjectName.Gateway/MyProjectName.Gateway.csproj
+  bindings:
+    - protocol: https
+      port: 7500
+# - name: myprojectname-blazor
+#   project: apps/MyProjectName.Blazor/MyProjectName.Blazor.csproj
+#   bindings:
+#     - protocol: https
+#       port: 5000
+# - name: myprojectname-blazor-server
+#   project: apps/MyProjectName.Blazor.Server/MyProjectName.Blazor.Server.csproj
+#   bindings:
+#     - protocol: https
+#       port: 5001

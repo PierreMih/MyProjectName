@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MyProjectName.DbMigrator": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

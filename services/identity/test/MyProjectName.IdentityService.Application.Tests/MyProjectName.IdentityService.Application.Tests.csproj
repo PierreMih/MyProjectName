@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>MyProjectName.IdentityService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MyProjectName.IdentityService.Application\MyProjectName.IdentityService.Application.csproj" />
+    <ProjectReference Include="..\MyProjectName.IdentityService.Domain.Tests\MyProjectName.IdentityService.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+  </ItemGroup>
+
+</Project>
